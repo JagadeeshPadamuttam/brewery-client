@@ -21,7 +21,7 @@ const ReviewForm = ({ onAddReview }) => {
 
     try {
       // Send the new review data to the server
-      const response = await axios.post('https://brewery-uw7j.onrender.com/reviews', { rating, description });
+      const response = await axios.post('https://brewery-uw7j.onrender.com/brewery/reviews', { rating, description });
 
       // Pass the new review data to the parent component
       onAddReview(response.data);
