@@ -10,7 +10,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://brewery-uw7j.onrender.com/', {
+      const response = await fetch('https://brewery-uw7j.onrender.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
